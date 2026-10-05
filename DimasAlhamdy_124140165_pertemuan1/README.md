@@ -45,7 +45,7 @@ Fitur yang dimiliki oleh website ini adalah
 
 # Penjelasan Teknis
 1. Penanganan Validasi Form
-    - Penggunaan Flag isValid, isValid disetel False jika salah satu pengecekan gagal dan error message akan ditampilkan "<small class="error-msg">"
+    - Penggunaan Flag isValid, isValid disetel False jika salah satu pengecekan gagal dan error message akan ditampilkan
 2. Perhitungan Kalkulator Keuangan
     - Semua perhitungan otomatis dihitung dalam fungsi renderKeranjang() dan hitungKembalian().
 
