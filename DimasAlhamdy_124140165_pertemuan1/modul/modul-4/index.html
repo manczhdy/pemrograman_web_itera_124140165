@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan JavaScript DOM, LocalStorage & API</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body id="app-body" class="p-6 bg-slate-50 text-slate-800 transition-colors duration-200">
+  <div class="max-w-3xl mx-auto space-y-8">
+    
+    <!-- 4. Dark Mode Toggle -->
+    <div class="flex justify-between items-center pb-4 border-b border-slate-300">
+      <h1 class="text-2xl font-bold">Latihan JavaScript Dasar</h1>
+      <button id="btn-dark-mode" class="bg-slate-700 text-white px-3 py-1.5 rounded text-sm hover:bg-slate-800 cursor-pointer">
+        🌙 Toggle Dark Mode
+      </button>
+    </div>
+
+    <!-- 1 & 2. Form Mahasiswa + LocalStorage -->
+    <section class="card-item bg-white p-5 rounded-lg border border-slate-200 shadow-sm">
+      <h2 class="text-lg font-bold mb-3">1 & 2. Data Mahasiswa (Validasi & LocalStorage)</h2>
+      <form id="form-mhs" class="flex flex-wrap gap-2 mb-3">
+        <input type="text" id="mhs-nama" placeholder="Nama" class="border border-slate-300 p-2 rounded flex-1 min-w-[140px]">
+        <input type="text" id="mhs-nim" placeholder="NIM" class="border border-slate-300 p-2 rounded flex-1 min-w-[120px]">
+        <input type="text" id="mhs-prodi" placeholder="Prodi" class="border border-slate-300 p-2 rounded flex-1 min-w-[120px]">
+        <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 cursor-pointer">Tambah</button>
+      </form>
+      <p id="mhs-error" class="text-rose-500 text-sm font-medium mb-2"></p>
+      <div id="mhs-tabel-container"></div>
+    </section>
+
+    <!-- 3 & 5. API Posts + Filter Search + Pagination -->
+    <section class="card-item bg-white p-5 rounded-lg border border-slate-200 shadow-sm">
+      <h2 class="text-lg font-bold mb-3">3 & 5. Post dari API (Search & Pagination)</h2>
+      <input type="text" id="post-search" placeholder="Cari berdasarkan judul..." class="border border-slate-300 p-2 rounded w-full mb-3">
+      
+      <div id="post-list" class="space-y-2 mb-4"></div>
+      
+      <div class="flex items-center justify-between pt-2 border-t border-slate-200">
+        <button id="btn-prev" class="bg-slate-200 px-3 py-1 rounded text-sm hover:bg-slate-300 disabled:opacity-40 cursor-pointer">Previous</button>
+        <span id="page-info" class="text-sm font-medium">Halaman 1</span>
+        <button id="btn-next" class="bg-slate-200 px-3 py-1 rounded text-sm hover:bg-slate-300 disabled:opacity-40 cursor-pointer">Next</button>
+      </div>
+    </section>
+
+    <!-- 6. Aplikasi Todo List -->
+    <section class="card-item bg-white p-5 rounded-lg border border-slate-200 shadow-sm">
+      <h2 class="text-lg font-bold mb-3">6. Todo List (LocalStorage)</h2>
+      <div class="flex gap-2 mb-3">
+        <input type="text" id="todo-input" placeholder="Tulis tugas baru..." class="border border-slate-300 p-2 rounded flex-1">
+        <button id="todo-add" class="bg-emerald-600 text-white px-4 py-2 rounded hover:bg-emerald-700 cursor-pointer">Tambah</button>
+      </div>
+      <ul id="todo-list" class="space-y-2"></ul>
+    </section>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
