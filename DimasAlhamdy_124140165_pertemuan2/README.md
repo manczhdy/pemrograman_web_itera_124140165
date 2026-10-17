@@ -48,7 +48,7 @@ Fitur yang dimiliki oleh website ini adalah
 4. Tampilan Daftar Tugas
 ![Tampilan-Daftar-Tugas](Screenshots/Daftar-Tugas.png)
 
-#Fitur ES6+
+# Fitur ES6+
 | Materi | File | Lokasi |
 | :--- | :--- | :--- |
 | `let` dan `const` | `js/app.js`, `js/modules/utils.js`, `js/modules/data.js` |  `app.js` (baris 27, 30, 34, 48, 86-88, 124, 148), `utils.js` (baris 3, 20-22), `data.js` (baris 12, 15) |
