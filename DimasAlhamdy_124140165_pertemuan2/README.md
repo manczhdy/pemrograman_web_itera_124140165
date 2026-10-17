@@ -40,10 +40,23 @@ Fitur yang dimiliki oleh website ini adalah
 ![Tampilan-Utama](Screenshots/Tampilan-Utama.png)
 
 2. Tampilan Status Tugas
-![Tampilan-Error-Handling](Screenshots/Status-Tugas.png)
+![Tampilan-Status-Tugas](Screenshots/Status-Tugas.png)
 
 3. Tampilan Form Tambah Tugas dan Deadline
-![Tampilan-Tabel-Belanja](Screenshots/Form-Tambah-Tugas.png)
+![Tampilan-Tambah-Tugas](Screenshots/Form-Tambah-Tugas.png)
 
 4. Tampilan Daftar Tugas
-![Tampilan-Kalkulator-dan-Reset](Screenshots/Daftar-Tugas.png)
+![Tampilan-Daftar-Tugas](Screenshots/Daftar-Tugas.png)
+
+#Fitur ES6+
+| Materi | File | Lokasi |
+| :--- | :--- | :--- |
+| `let` dan `const` | `js/app.js`, `js/modules/utils.js`, `js/modules/data.js` |  `app.js` (baris 27, 30, 34, 48, 86-88, 124, 148), `utils.js` (baris 3, 20-22), `data.js` (baris 12, 15) |
+| Arrow functions | `js/modules/utils.js`, `js/app.js`, `js/modules/data.js`, `js/main.js` | `utils.js` (baris 1, 8, 14, 19, 21, 27); `app.js` (baris 22, 23, 31, 61, 70, 76, 102, 147, 174-184); `data.js` (baris 10, 17); `main.js` (baris 4) |
+| Template literals | `js/app.js`, `js/modules/utils.js` | `renderStats` (`app.js` baris 126-138), `renderTaskList` (`app.js` baris 152-167), `generateUniqueId` (`utils.js` baris 28) |
+| Destructuring | `js/app.js`, `js/modules/data.js` | `app.js` (baris 47, 60, 124, 147); `data.js` (baris 2) |
+| Spread | `js/app.js` | `[...apiTasks]` (baris 35), `[newTask, ...this.#tasks]` (baris 55), `{ ...task, title, deadline }` (baris 62), `{ ...task, completed: !task.completed }` (baris 77) |
+| Classes | `js/modules/data.js`, `js/app.js` | `TaskItem` (`data.js` baris 1), `DashboardApp` (`app.js` baris 4) |
+| Array methods | `js/app.js`, `js/modules/utils.js`, `js/modules/data.js` | `map` (`app.js` baris 31, 61, 76, 147; `data.js` baris 17), `filter` (`app.js` baris 70; `utils.js` baris 21), `find` (`app.js` baris 102), `forEach` (`app.js` baris 174, 178, 182) |
+| Async/await | `js/modules/data.js`, `js/app.js` | `fetchInitialTasks` (`data.js` baris 10, 12, 15), `init` (`app.js` baris 26, 34) |
+| ES Modules | `js/main.js`, `js/app.js`, `js/modules/data.js`, `js/modules/utils.js`, `index.html` | `import` / `export` di semua file JS; `<script type="module" src="js/main.js"></script>` di `index.html` (baris 68) |
