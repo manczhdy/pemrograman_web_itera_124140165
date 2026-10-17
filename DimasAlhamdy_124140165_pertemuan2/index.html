@@ -11,7 +11,7 @@
   <div class="dashboard-container">
     <!-- Header Dashboard -->
     <header class="dashboard-header">
-      <h1>Pencatat Tugas</h1>
+      <h1>PENCATAT TUGAS</h1>
       <p>Dilupain itu gak enak, jangan sampe lupain tugas ya</p>
     </header>
 
@@ -30,8 +30,13 @@
           <input type="hidden" id="task-id">
           
           <div class="form-group">
-            <label for="task-title">Judul Tugas / Catatan</label>
+            <label for="task-title">Judul Tugas</label>
             <input type="text" id="task-title" placeholder="Masukkan nama tugas..." required>
+          </div>
+
+          <div class="form-group">
+            <label for="task-deadline">Batas Waktu Pengumpulan (Deadline)</label>
+            <input type="datetime-local" id="task-deadline">
           </div>
 
           <div class="form-actions">
