@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Dashboard - Task Manager</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="dashboard-container">
+    <!-- Header Dashboard -->
+    <header class="dashboard-header">
+      <h1>Pencatat Tugas</h1>
+      <p>Dilupain itu gak enak, jangan sampe lupain tugas ya</p>
+    </header>
+
+    <!-- Stat Ringkasan Tugas -->
+    <section class="stats-section" id="stats-container">
+      <!-- Diisi secara dinamis via JavaScript -->
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="dashboard-main">
+      
+      <!-- Card Form Input / Edit Task -->
+      <div class="card form-card">
+        <h2 id="form-title">Tambah Tugas Baru</h2>
+        <form id="task-form">
+          <input type="hidden" id="task-id">
+          
+          <div class="form-group">
+            <label for="task-title">Judul Tugas / Catatan</label>
+            <input type="text" id="task-title" placeholder="Masukkan nama tugas..." required>
+          </div>
+
+          <div class="form-actions">
+            <button type="submit" id="btn-save" class="btn btn-primary">Simpan Tugas</button>
+            <button type="button" id="btn-cancel" class="btn btn-secondary hidden">Batal Edit</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Card List Task -->
+      <div class="card list-card">
+        <div class="list-header">
+          <h2>Daftar Tugas</h2>
+          <div id="loading-indicator" class="loading hidden">Memuat data dari API...</div>
+        </div>
+
+        <ul id="task-list" class="task-list">
+          <!-- Item tugas akan dirender di sini secara dinamis -->
+        </ul>
+      </div>
+
+    </main>
+  </div>
+
+  <!-- SCRIPT UTAMA MODULE -->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
