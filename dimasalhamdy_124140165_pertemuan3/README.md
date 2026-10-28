@@ -9,7 +9,7 @@ Aplikasi untuk mengurus dan mengorganisir buku. Dibantu dengan mencatat, memanta
 
 ## Screenshots
 1. Tampilan utama
-![Tampilan-Utama](Screenshots/Tampilan-Utama.png)
+![Tampilan-Utama](Screenshots/Tampilan-utama.png)
 
 2. Tampilan Statistik
 ![Tampilan-Statistik](Screenshots/Tampilan-statistik.png)
