@@ -1,0 +1,13 @@
+.book-filter{
+    grid-template-columns:minmax(0,1fr) 155px
+}
+
+.filter-result{
+    grid-column:1/-1;
+    margin:0;
+    color:#8b949e;
+    font-size:12px
+}
+
+@media(max-width:520px){
+    .book-filter{grid-template-columns:1fr}}

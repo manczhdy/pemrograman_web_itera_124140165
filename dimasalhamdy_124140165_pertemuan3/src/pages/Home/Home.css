@@ -1,0 +1,20 @@
+.heading-count{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    border:1px solid #293d51;
+    border-radius:10px;
+    padding:12px 16px;
+    background:midnightblue;
+    white-space:nowrap
+}
+    
+.heading-count strong{
+    color:#58a6ff;
+    font-size:24px
+}
+
+.heading-count span{
+    color:#9da7b3;
+    font-size:12px
+}
