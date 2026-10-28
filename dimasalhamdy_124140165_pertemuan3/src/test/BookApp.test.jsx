@@ -16,7 +16,7 @@ describe('Aplikasi Manajemen Buku Pribadi', () => {
 
   it('menampilkan halaman utama dan form buku', () => {
     renderApp();
-    expect(screen.getByRole('heading', { name: 'Rak Buku Saya' })).toBeInTheDocument();
+    expect(screen.getByRole('heading', { name: 'Catat buku yang dimiliki, sedang dibaca, dan ingin dibeli' })).toBeInTheDocument();
     expect(screen.getByLabelText(/Judul buku/i)).toBeInTheDocument();
   });
 
@@ -32,7 +32,7 @@ describe('Aplikasi Manajemen Buku Pribadi', () => {
     const user = userEvent.setup();
     renderApp();
     await user.type(screen.getByLabelText(/Judul buku/i), 'Laskar Pelangi');
-    await user.type(screen.getByLabelText(/Nama penulis/i), 'Andrea Hirata');
+    await user.type(screen.getByLabelText(/^Nama penulis/i), 'Andrea Hirata');
     await user.selectOptions(screen.getByLabelText('Status buku'), 'baca');
     await user.click(screen.getByRole('button', { name: 'Tambah Buku' }));
     expect(screen.getByText('Laskar Pelangi')).toBeInTheDocument();

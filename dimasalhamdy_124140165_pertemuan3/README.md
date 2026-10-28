@@ -17,6 +17,9 @@ Aplikasi untuk mengurus dan mengorganisir buku. Dibantu dengan mencatat, memanta
 3. Validasi Error
 ![Validasi-Error](Screenshots/Validasi-error.png)
 
+4. Hasil-Testing
+![Hasil-Testing](Screenshots/Hasil-Testing.png)
+
 ## Fitur React yang Digunakan
 - **React Hooks Inti**
   - `useState`: Mengelola *state* lokal seperti nilai input form, pesan kesalahan (*errors*), status *touched*, pencarian, dan pilihan filter
