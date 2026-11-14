@@ -40,4 +40,4 @@ Deskripsi singkat alur kerja dan fungsi pada setiap program tugas.
 ![Screenshot](Screenshots/peminjaman_dan_denda_terlambat.png)
 
 4. Tampilan Katalog Akhir
-![Screenshot](Screenshots/katalog_akhir.png)
+![Screenshot](Screenshots/Katalog_akhir.png)
