@@ -1,0 +1,40 @@
+# Virtual environment
+venv/
+.venv/
+
+# Cache Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Database lokal SQLite (tidak digunakan, hanya pengaman)
+*.sqlite
+*.sqlite3
+
+# Variabel lingkungan / kredensial
+.env
+
+# Pytest & coverage
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Linter
+.mypy_cache/
+.ruff_cache/
+
+# Paket hasil build
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Editor / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Log
+*.log
